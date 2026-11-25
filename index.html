@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24151d">
+  <meta name="description" content="A little website made with love.">
+  <title>Our Love Story ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Itim&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">♡</span><span>OUR LOVE STORY</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">หน้าแรก</a>
+      <a href="#letter">จดหมาย</a>
+      <a href="#memories">ความทรงจำ</a>
+      <a href="#timeline">เรื่องราวของเรา</a>
+      <a href="#forever">คำสัญญา</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> A LITTLE WORLD, JUST FOR US <span></span></p>
+        <h1>To my favorite<br><em>person.</em></h1>
+        <p class="hero-description">มีบางอย่างที่อยากบอกเธอ<br>เว็บเล็ก ๆ นี้ตั้งใจทำขึ้นเพื่อเธอคนเดียว</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#letter">อ่านข้อความจากเรา <span>♡</span></a>
+          <a class="text-link" href="#memories">ดูความทรงจำของเรา ↓</a>
+        </div>
+        <div class="hero-note"><span class="tiny-heart">♥</span> Made with all my love</div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-photo-frame">
+          <img src="images/photo1.jpg" alt="รูปความทรงจำของเรา" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')">
+          <div class="placeholder-content"><span>♡</span><small>YOUR FAVORITE PHOTO</small><b>ใส่รูปคู่ของเรา</b></div>
+        </div>
+        <div class="floating-label label-top">You are my<br><i>happy place.</i></div>
+        <div class="floating-label label-bottom">Forever & always <span>✧</span></div>
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p>“บางทีความสุขก็เรียบง่าย แค่มีเธออยู่ในวันธรรมดา ๆ”</p>
+      <span>♡</span>
+    </section>
+
+    <section class="section-wrap letter-section" id="letter">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LETTER FROM MY HEART</p>
+        <h2>ถึงคนพิเศษของเรา <em>♡</em></h2>
+        <p>มีข้อความหนึ่งที่อยากให้เธอได้อ่าน</p>
+      </div>
+      <div class="letter-card reveal">
+        <div class="letter-top"><span>TO: MY LOVE</span><span>WITH LOVE, ALWAYS</span></div>
+        <div class="letter-seal">♡</div>
+        <p class="letter-greeting">ถึงเธอคนเก่ง,</p>
+        <p class="letter-body" id="letterText">ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิตของเรา ขอบคุณทุกเสียงหัวเราะ ทุกช่วงเวลาที่ได้อยู่ด้วยกัน และแม้ในวันที่เราอาจทำอะไรผิดพลาดไป เราก็อยากเรียนรู้และปรับปรุงตัวให้ดีขึ้นเสมอ เธอมีความหมายกับเรามากกว่าที่คำพูดจะบอกได้</p>
+        <p class="letter-sign">รักเธอมาก ๆ นะ <span>♡</span></p>
+        <button class="button button-outline" id="letterReveal">อ่านข้อความจากใจอีกครั้ง</button>
+      </div>
+    </section>
+
+    <section class="apology-section">
+      <div class="apology-inner section-wrap reveal">
+        <div class="apology-illustration"><div class="halo"></div><div class="teddy">🧸</div><span class="mini-spark">✦</span></div>
+        <div class="apology-copy">
+          <p class="eyebrow">I'M SORRY, MY LOVE</p>
+          <h2>ถ้าเราทำให้เสียใจ<br><em>ขอโทษนะ</em></h2>
+          <p>เราอาจไม่ได้ทำทุกอย่างได้ดีเสมอไป แต่เราอยากรับฟังความรู้สึกของเธอ และตั้งใจจะปรับปรุงให้ดีขึ้น ความรู้สึกของเธอสำคัญกับเราจริง ๆ</p>
+          <button class="button button-primary" id="forgiveBtn">ส่งกอดให้เราหน่อยได้ไหม <span>♡</span></button>
+          <p class="response-message" id="forgiveMessage" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap memories-section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LITTLE MOMENTS, BIG LOVE</p>
+        <h2>Our <em>Memories</em></h2>
+        <p>ภาพเล็ก ๆ ที่เก็บความรู้สึกไว้มากมาย</p>
+      </div>
+      <div class="gallery">
+        <figure class="memory-card memory-tall reveal"><img src="images/photo2.jpg" alt="ความทรงจำของเรา 1" onerror="this.style.display='none';this.parentElement.classList.add('image-empty')"><div class="image-caption">01 / The beginning</div></figure>
+        <figure class="memory-card reveal"><img src="images/photo3.jpg" alt="ความทรงจำของเรา 2" onerror="this.style.display='none';this.parentElement.classList.add('image-empty')"><div class="image-caption">02 / Your smile</div></figure>
+        <figure class="memory-card reveal"><img src="images/photo4.jpg" alt="ความทรงจำของเรา 3" onerror="this.style.display='none';this.parentElement.classList.add('image-empty')"><div class="image-caption">03 / Our little world</div></figure>
+      </div>
+      <p class="gallery-hint">อยากจะบอกว่า  <code>ขอโทษ</code> สำหรับทุกสิ่งที่เราทำให้เธอรู้สึกไม่ดีมาตลอด</p>
+    </section>
+
+    <section class="anniversary-section">
+      <div class="section-wrap anniversary-inner reveal">
+        <p class="eyebrow">EVERY SECOND WITH YOU</p>
+        <h2>Time flies, <em>love stays.</em></h2>
+        <p>ตั้งแต่วันที่เราเริ่มต้นเดินไปด้วยกัน</p>
+        <div class="counter-grid" id="counter" aria-live="polite">
+          <div><strong id="days">0</strong><span>วัน</span></div>
+          <div><strong id="hours">00</strong><span>ชั่วโมง</span></div>
+          <div><strong id="minutes">00</strong><span>นาที</span></div>
+          <div><strong id="seconds">00</strong><span>วินาที</span></div>
+        </div>
+        <p class="counter-caption">and counting... ♡</p>
+      </div>
+    </section>
+
+    <section class="section-wrap timeline-section" id="timeline">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTERS OF US</p>
+        <h2>Our little <em>story</em></h2>
+        <p>เรื่องราวของเรายังมีบทต่อไปเสมอ</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-dot">01</span><div><small>THE DAY WE MET</small><h3>วันที่เราได้รู้จักกัน</h3><p>วันธรรมดาวันหนึ่ง ที่กลายเป็นจุดเริ่มต้นของเรื่องราวพิเศษ</p></div></article>
+        <article class="timeline-item reveal"><span class="timeline-dot">02</span><div><small>OUR FIRST MEMORY</small><h3>ความทรงจำแรกของเรา</h3><p>ทุกครั้งที่นึกถึง ก็ยังทำให้ยิ้มได้เหมือนเดิม</p></div></article>
+        <article class="timeline-item reveal"><span class="timeline-dot">03</span><div><small>MORE TO COME</small><h3>เรื่องราวบทต่อไป</h3><p>ยังมีอีกหลายสถานที่ หลายรอยยิ้ม และหลายความทรงจำที่เราอยากสร้างด้วยกัน</p></div></article>
+      </div>
+    </section>
+
+    <section class="promise-section" id="forever">
+      <div class="promise-content reveal">
+        <p class="eyebrow">ONE LAST THING</p>
+        <div class="promise-heart">♡</div>
+        <h2>My favorite place<br>is <em>next to you.</em></h2>
+        <p>เราไม่รู้ว่าทุกวันข้างหน้าจะเป็นอย่างไร<br>แต่เราอยากตั้งใจดูแลความรักของเราให้ดีที่สุด</p>
+        <button class="button button-light" id="surpriseBtn">กดรับความรักของเรา <span>♥</span></button>
+        <p class="final-message" id="finalMessage" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <button class="music-button" id="musicBtn" aria-label="เปิดหรือหยุดเพลง"><span>♫</span><b id="musicLabel">เปิดเพลง</b></button>
+  <audio id="backgroundMusic" loop preload="none"><source src="music.mp3" type="audio/mpeg"></audio>
+
+  <footer><a class="brand footer-brand" href="#home">♡ OUR LOVE STORY</a><p>Created with love, just for you.</p><span>© <span id="year"></span> — Always yours</span></footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
